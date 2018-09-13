@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+
+button {
+    background-color: #154eb7;
+    color: white;
+    margin: .4%;
+    width: 150px;
+    height: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+#music-form {
+    font-family: 'Montserrat', sans-serif;
+    padding: 2%;
+
+}
+
+#addArtist {
+    font-family: 'Montserrat', sans-serif;
+    background-color:black;
+    color: white;
+    padding: 2%;
+    font-size: 16px;
+}
