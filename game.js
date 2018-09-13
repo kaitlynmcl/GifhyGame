@@ -2,6 +2,9 @@ $(document).ready(function() {
 
                                                 //ARRAY TO STORE GIFPHY IMAGES 
 var topics = ["GERARD WAY", "ROBERT SMITH",  "SKRILLEX", "BRIGHT EYES", "SUFJAN STEVENS", "MORRISEY", "LEONARD COHEN"]; 
+
+
+
 for (var i = 0; i <topics.length; i++) {
     var artistAdd = $("<button>");
     artistAdd.addClass("artist");
@@ -14,7 +17,7 @@ for (var i = 0; i <topics.length; i++) {
 $("button").on("click", function() {
     var artist = $(this).attr("data-name");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + artist + "&api_key=XDPcOeI4M9yKEpttK33FxsuypoDjJGKt&limit=10"; 
-   
+    $("#gifs-station").empty();                //CLEARS OUT GIFS-STATION DIV TO MAKE ROOM FOR NEXT GROUP OF IMAGES 
 
     $.ajax({
       url: queryURL,
