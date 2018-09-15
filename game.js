@@ -65,19 +65,18 @@ function renderButtons() {                              //FUNCTION TO DISPLAY BU
 $("#addSadBoy").on("click", function(event){            //ALLOWS TO UPDATE FORM WITH NEW SADBOY
     event.preventDefault();
 
-    // This line of code will grab the input from the textbox
+                                                        //GRABS INPUT FROM TEXTBOX 
     var sadBoySelect = $("#musician-input").val().trim();
 
-    // The anime from the textbox is then added to our array
+                                                        //SADBOY/TOPIC FROM TEXTBOX IS ADDED TO ARRAY
     topics.push(sadBoySelect);
 
-    // Calling renderButtons which handles the processing of our anime array
-    renderButtons();
+    renderButtons();                                    //CALLING RENDERBUTTONS TO HANDLE PROCESSING OF TOPICS ARRAY
   });
 
-  // Adding click event listeners to all elements with a class of "anime"
+ 
   $(document).on("click", ".artist", displayGifphys);   //SELECTS ARTIST CLASS TO GENERATE BUTTONS
 
-  // Calling the renderButtons function to display the intial buttons
+                                                        //CALLING RENDER BUTTONS FUNCTION 
   renderButtons();
 });
